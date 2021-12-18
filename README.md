@@ -8,7 +8,7 @@ The purpose of this project is to:
   
  This project run on chromium instance on a remote selenium server with --headless configuration (No GUI)
  ----------------------------------------------------------------------------------------------------------
- **Running the Project**
+ # Running the Project
   - Clone this repository 
   - Make sure to install Docker from https://docs.docker.com/get-docker/
   - After the project is cloned to your local machine >> Go to the project folder location
@@ -18,7 +18,7 @@ The purpose of this project is to:
       - docker-compose up  -----------> // Project will start in headless mode, however you will be able to
       -  monitor the logs from the command prompt
 ----------------------------------------------------------------------------------------------------------  
-**Reading Project Results**
+# Reading Project Results
     - Since this project runs in headless mode, you can monitor project run logs from command prompt 
     after running the command --> docker-compose up
     - I've put a printed confirmation message after each element and colored messages to be easy to read/follow
@@ -27,7 +27,7 @@ The purpose of this project is to:
       step it took before the script crashed
     - Screenshots are saved in /app folder along with main class and other classes
     ----------------------------------------------------------------------------------------------------------
-    **Running without docker**
+ # Running without docker
       - You'll need to run the script from main.py and modify the .env file with "CHROMEDRIVER_PATH" on your machine
       - Then replace driver = webdriver.Remote('http://selenium:4444/wd/hub', desired_capabilities=chrome_options.to_capabilities()) 
       WITH driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options) 
@@ -35,7 +35,7 @@ The purpose of this project is to:
       - And you'll need to download latest chrome driver and add to the project folder and assign it's path to "CHROMEDRIVER_PATH"
       - Then you'll need to setup python-dotenv and selenium
 ----------------------------------------------------------------------------------------------------------     
-#Important Note
+# Important Note
       - Waits in this project are implicit waits and it's for 60 seconds, but sometimes due to slow network connection,
       selenium fails to find a certain element and the script crashes
       - Usually I investigate more in these situation to find the perfect solution to avoid unneccesary crashes 
