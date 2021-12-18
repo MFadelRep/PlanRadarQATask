@@ -1,5 +1,5 @@
 # PlanRadarQATask
-This Project is built to be run on any operating system that has Docker installed on it without any further configuration
+This Project is built to be run on any operating system that has *Docker* installed on it without any further configuration
 The purpose of this project is to:
   - Go to "Amazon.com"
   - Select any product from "All Categories" >> "Computers" >> "Computers & Tablets"
